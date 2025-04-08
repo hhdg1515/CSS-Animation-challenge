@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+}
+
+.image-wrapper {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url("main.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation:background 1s ease-out 0s 1 alternate;
+	animation-fill-mode: both;
+}
+
+.title {
+	font-size: 4em;
+	text-transform: uppercase;
+	text-shadow: 2px 2px whitesmoke;
+	margin: 0;
+	font-family: Sen;
+	text-align: center;
+	animation:title 1s ease-out 2s 1 alternate;
+	animation-fill-mode: both;
+}
+
+@keyframes background{
+	0%{width: 0%; opacity: 0%;}
+	100%{width: 100%; opacity: 100%;}
+}
+
+@keyframes title {
+	0%{ opacity: 0%;}
+	100%{ opacity: 100%;}
+}
